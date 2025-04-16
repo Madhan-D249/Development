@@ -6,12 +6,12 @@ pipeline
       stage('info')
       {
         steps{
-        sh """ echo${env.JOB_NAME}
+        sh ''' echo${env.JOB_NAME}
         echo${env.BUILD_ID}
         pwd
         uptime
         hostname
-        """
+        '''
       }
     }
 }
