@@ -12,12 +12,7 @@ pipeline
         stage("build")
         {
             steps{
-                sh""" echo ${env.BUILD_ID}
-                echo ${env.JOB_NAME}
-                pwd
-                uptime
-                hostname
-                """
+                mvn 'clean package'
             }
         }
     }
