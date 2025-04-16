@@ -6,8 +6,8 @@ pieline
         stage('info')
         {
             steps{
-                sh """echo${env.BUILD_ID}
-                echo${env.JOB_NAME}
+                sh """ echo ${env.BUILD_ID}
+                echo ${env.JOB_NAME}
                 pwd
                 uptime
                 hostname
