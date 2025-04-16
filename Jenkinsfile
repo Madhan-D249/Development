@@ -1,18 +1,18 @@
-pipeline
+pieline
 {
-  agent any
+    agent any
     stages
     {
-      stage('info')
-      {
-        steps{
-        sh ''' echo${env.JOB_NAME}
-        echo${env.BUILD_ID}
-        pwd
-        uptime
-        hostname
-        '''
-      }
+        stage('info')
+        {
+            steps{
+                sh """echo${env.BUILD_ID}
+                echo${env.JOB_NAME}
+                pwd
+                uptime
+                hostname
+                """
+            }
+        }
     }
-}
 }
