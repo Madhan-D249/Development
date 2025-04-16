@@ -1,6 +1,8 @@
 pipeline
 {
-    agent any
+    agent {
+        lable 'slave-node'
+    }
     stages
     {
         stage("info")
