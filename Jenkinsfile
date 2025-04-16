@@ -3,7 +3,7 @@ pieline
     agent any
     stages
     {
-        stage('info')
+        stage("info")
         {
             steps{
                 sh """ echo ${env.BUILD_ID}
